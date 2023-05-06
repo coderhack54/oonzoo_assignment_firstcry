@@ -1,0 +1,22 @@
+.cardsection{
+    padding: 0px 120px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+        margin: 32px 120px;
+        font-size: 24px;
+        font-weight: 500;
+        color: rgb(67, 59, 59);
+    }
+
+    .cardsection__cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        gap: 20px;
+    }
+}

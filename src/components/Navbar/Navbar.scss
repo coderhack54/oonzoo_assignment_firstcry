@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin flexcode {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.navbar{
+    padding: 12px 80px;
+
+    .navbar__container{
+        @include flexcode;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+
+        .navbar__container__left{
+            @include flexcode;
+            gap: 10px;
+
+            div{
+                border: 1px solid rgb(238, 238, 238);
+                padding: 6px 12px;
+                border-radius: 6px;
+                display: flex;
+                min-width: 300px;
+
+                &:focus-within{
+                    border-color:  #ff7043;
+                    span{
+                    color: #ff7043;
+                    }
+                }
+
+
+                input{
+                    border: 0;
+                    outline: none;
+                    width: 100%;
+                    height: 100%;
+                    &:focus-visible{
+                        border: 0
+                    } 
+                }
+
+
+            }
+        }
+        .navbar__container__right{
+            @include flexcode;
+
+            ul{
+                font-size: 12px;
+                line-height: 17px;
+                font-weight: 400;
+                color: #342c2c;
+
+            }
+
+            .navbar__cart__button{
+                @include flexcode();
+                gap: 2px;
+                font-size: 14px;
+                border: 0;
+                background-color: white;
+                font-size: 16px;
+                font-weight: 500;
+               color: #575757;
+               position: relative;
+               align-items: flex-start;
+
+               .navbar__cart__button__items{
+                position: absolute;
+                top: -14px;
+                left: 20px;
+                font-size: 18px;
+                color: #ff7043;
+                line-height: 25px;
+               }
+            }
+        }
+    }
+}
+
+.navbar__container__right{
+    ul{
+        @include flexcode();
+        list-style: none;
+        gap: 8px;
+
+        li{
+            position: relative;
+            cursor: pointer;
+           &::after{
+            content: "";
+            position: absolute;
+            right: -4px;
+            top: 0;
+            height: 16px;
+            width: 1px;
+            background-color: lightgray;
+            
+           }
+        }
+    }
+}
