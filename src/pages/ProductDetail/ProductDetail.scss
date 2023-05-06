@@ -81,3 +81,27 @@
         }
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .productdetail{
+        flex-direction: column;
+        .productdetail__left{
+            width: 100%;
+            justify-content: center;
+            img{
+                height: 350px;
+                width: 250px;
+            }
+            .productdetail__left__buttons{
+                flex-direction: column;
+            }
+        }
+        .productdetail__right{
+            width: 100%;
+            p{
+                width: 100%;
+            }
+        }
+    }
+}

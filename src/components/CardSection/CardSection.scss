@@ -20,3 +20,13 @@
         gap: 20px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .cardsection__cards{
+        grid-template-columns: 12fr !important;
+    }
+    .cardsection{
+        padding: 0px 60px;
+    }
+}

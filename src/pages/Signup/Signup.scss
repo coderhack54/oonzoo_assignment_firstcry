@@ -57,8 +57,13 @@
                 color: white;
                 background-color: #ff7043;
     }
+}
 
 }
 
+@media screen and (max-width: 768px) {
+    .signup__container{
+        width: 80% !important;
+    }
 }
 
