@@ -5,7 +5,7 @@ import ProductDetail from './pages/ProductDetail/ProductDetail';
 import Home from './pages/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Subnav from './components/Subnav/Subnav';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup';
 

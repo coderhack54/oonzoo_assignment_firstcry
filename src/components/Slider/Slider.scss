@@ -22,6 +22,7 @@
    border-radius: 50%;
    background-color: white;
    @include flexcode();
+   cursor: pointer;
 }
 .slider__nextbutton{
     position: absolute;
@@ -34,4 +35,5 @@
    border-radius: 50%;
    background-color: white;
    @include flexcode();
+   cursor: pointer;
 }

@@ -6,7 +6,7 @@ const Card = (props) => {
     const {id,title,image}=data;
     const navigate=useNavigate();
     const handleNavigate=()=>{
-        navigate(`product/${id}`)
+        navigate(`/product/${id}`)
     }
   return (
     <div className='card' onClick={handleNavigate}>
