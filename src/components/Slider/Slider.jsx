@@ -8,9 +8,9 @@ import { MdArrowBackIosNew,MdArrowForwardIos } from 'react-icons/md';
 import { useRef } from 'react';
 
 const data = [
-  "/src/assets/images/bannerimg1.webp",
-  "/src/assets/images/bannerimg2.webp",
-  "/src/assets/images/bannerimg3.webp",
+  "https://cdn.fcglcdn.com/brainbees/banners/hp_mktg_p04_epic_sale_may_desktop1683215263062.webp",
+  "https://cdn.fcglcdn.com/brainbees/banners/merchf_fisttimeuser_hp1683293018665.webp",
+  "https://cdn.fcglcdn.com/brainbees/banners/hp_mktg_p01_fab_fashion_mdc_west_desktop1683292660751.webp",
 ];
 
 const PrevButton = () => <MdArrowBackIosNew  color='lightgray' size={20}/>;
